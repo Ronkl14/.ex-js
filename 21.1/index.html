@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter age" />
+    <button>Submit</button>
+    <script>
+      const ageBox = document.querySelector("input");
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        if (Number(ageBox.value) >= 18) {
+          const allow = document.createElement("p");
+          allow.innerText = "You can drink";
+          document.body.append(allow);
+        } else {
+          const dontAllow = document.createElement("p");
+          dontAllow.innerText = "You can't drink";
+          document.body.append(dontAllow);
+        }
+      });
+    </script>
+  </body>
+</html>
