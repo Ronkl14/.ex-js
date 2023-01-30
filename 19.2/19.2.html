@@ -7,6 +7,13 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- 1. Loop over the array with the forEach method and
+    dynamically create an ordered list of the first and last
+    names of the objects.
+    2. Remove the bullet points of the ordered list with
+    JavaScript.
+    3. Create a custom data attribute called “data-id” and attach
+    the id value to each li. -->
     <script>
       const users = [
         {
@@ -30,12 +37,12 @@
       ];
 
       const names = document.createElement("ol");
-      names.style.listStyle = 'none';
+      names.style.listStyle = "none";
 
       users.forEach((user) => {
         const listItem = document.createElement("li");
         listItem.innerText = `${user.firstName} ${user.lastName}`;
-        const dataID = document.createAttribute('data-id');
+        const dataID = document.createAttribute("data-id");
         dataID.value = user.id;
         listItem.setAttributeNode(dataID);
         names.appendChild(listItem);

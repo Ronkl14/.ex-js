@@ -4,7 +4,7 @@ const sevenBoom = (num) => {
   let arrSeven = arr.map((numa) => {
     if (numa % 7 == 0 && String(numa).includes(7)) {
       return "BOOM-BOOM";
-    } else if (numa % 7 == 0) {
+    } else if (numa % 7 == 0 || String(numa).includes('7')) {
       return "BOOM";
     } else {
       return numa;
@@ -13,4 +13,4 @@ const sevenBoom = (num) => {
   return arrSeven;
 };
 
-console.log(sevenBoom(77));
+console.log(sevenBoom(798));

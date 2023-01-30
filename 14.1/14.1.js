@@ -31,8 +31,6 @@ const sumEven = (arr) =>
   arr.filter((num) => num % 2 === 0).reduce((acc, curr) => acc + curr);
 console.log(sumEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-const avg = (arr) => 
-arr.reduce((acc,curr) => acc+curr)/arr.length;
+const avg = (arr) => arr.reduce((acc, curr) => acc + curr) / arr.length;
 
 console.log(avg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-

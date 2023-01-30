@@ -1,12 +1,3 @@
-// const swapObj = (obj) => {
-//   const keys = Object.keys(obj);
-//   const vals = Object.values(obj);
-
-//   const newObj = new Object();
-//   Object.assign(newObj, { [vals]: keys });
-//   return newObj;
-// };
-
 const swapObj = (obj) => {
   const newObj = {};
   for (const key in obj) {

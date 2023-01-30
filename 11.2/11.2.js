@@ -72,9 +72,12 @@ const shiftLetters = (str) => {
 console.log(shiftLetters("bcdefghijklmo"));
 
 const swapCase = (str) => {
-  const swapped = str.split(" ").map(function (word, idx) {
-    return idx%2 === 0 ? word.toUpperCase() : word;
-  }).join(' ');
+  const swapped = str
+    .split(" ")
+    .map(function (word, idx) {
+      return idx % 2 === 0 ? word.toUpperCase() : word;
+    })
+    .join(" ");
   return swapped;
 };
 

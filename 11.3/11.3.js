@@ -68,10 +68,9 @@ const foodCount = (data) => {
   const allFood = [].concat(...foods);
   let obj = {};
   allFood.forEach(function (food) {
-    !obj[food] ? obj[food] = 1 : obj[food] += 1;
+    !obj[food] ? (obj[food] = 1) : (obj[food] += 1);
   });
   return obj;
 };
 
 console.log(foodCount(data));
-

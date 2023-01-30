@@ -30,3 +30,4 @@ const capitalSecond = (str) => {
 
 console.log(firstWordUpperCase("a big fish is on the way", dashing));
 console.log(firstWordUpperCase("a big fish is on the way", capitalSecond));
+

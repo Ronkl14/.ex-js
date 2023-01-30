@@ -8,7 +8,7 @@ const steps = (N) => {
         }
         console.log(`'${str[i].join('')}'`);
     }
+    return '';
 }
 
-
-console.log(steps(5));
+console.log(steps(17));
