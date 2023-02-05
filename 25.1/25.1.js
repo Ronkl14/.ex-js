@@ -14,8 +14,9 @@ const hero = {
   },
 };
 function whoIsStronger(getStrength) {
-//   console.log(getStrength());
-//   console.log(hero.getStrength());
+  // console.log(this);
+  //   console.log(getStrength());
+  //   console.log(hero.getStrength());
   const myStrength = 82;
   if (getStrength() < myStrength) {
     return "I am stronger";
@@ -32,6 +33,6 @@ function whoIsStronger(getStrength) {
 
 const getStr = hero.getStrength.bind(hero);
 console.log(getStr());
-
-console.log(whoIsStronger.call(this, getStr))
+console.log(whoIsStronger(getStr));
+console.log(whoIsStronger.call(this, getStr));
 console.log(whoIsStronger.apply(this, [getStr]));
